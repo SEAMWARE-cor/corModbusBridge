@@ -5,7 +5,7 @@ reads it and writes to it over Modbus TCP through this bridge. The tank then *is
 entity: queryable, subscribable and with history, and writable back to the PLC.
 
 Next to it, an MQTT temperature sensor publishes on `plant/tank1/temperature`, and coraine's MQTT
-bridge ([corMqttBridge](https://github.com/SEAMWARE/corMqttBridge)) makes that the same tank's
+bridge ([corMqttBridge](https://github.com/SEAMWARE-cor/corMqttBridge)) makes that the same tank's
 `temperature`. Alarm notifications go out over HTTP and over MQTT, side by side.
 
 There is no hardware and no glue code. The only thing that ties the PLC and the sensor to NGSI-LD
